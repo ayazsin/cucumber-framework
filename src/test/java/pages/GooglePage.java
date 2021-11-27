@@ -13,6 +13,6 @@ public class GooglePage {
     @FindBy(name = "q")
     public WebElement googleSearchBox;
 
-    @FindBy(xpath = "(//div[@class='jyfHyd'])[2]")
+    @FindBy(xpath = "(//div[@class='QS5gu sy4vM'])[2]")
     public WebElement agreeButton;
 }

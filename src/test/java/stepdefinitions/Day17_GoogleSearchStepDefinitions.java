@@ -23,27 +23,57 @@ public class Day17_GoogleSearchStepDefinitions {
     public void user_search_for_i_phone() {
         googlePage.googleSearchBox.sendKeys("iPhone"+ Keys.ENTER);
     }
+
     @Then("verify the result has iPhone")
     public void verify_the_result_has_i_phone() {
         String title = Driver.getDriver().getTitle();
         Assert.assertTrue(title.contains("iPhone"));
-
     }
 
     @Given("user search for tea pot")
     public void user_search_for_tea_pot() {
         googlePage.googleSearchBox.sendKeys("tea pot"+Keys.ENTER);
     }
+
     @Then("verify the result has tea pot")
     public void verify_the_result_has_tea_pot() {
         String title = Driver.getDriver().getTitle();
         Assert.assertTrue(title.contains("tea pot"));
     }
 
-    @Then("close the application")
-    public void close_the_application() {
-        Driver.closeDriver();
+    @Given("user search for flower")
+    public void user_search_for_flower() {
+        googlePage.googleSearchBox.sendKeys("flower" + Keys.ENTER);
     }
+
+    @Then("verify the result has flower")
+    public void verify_the_result_has_flower() {
+        String title = Driver.getDriver().getTitle();
+        Assert.assertTrue(title.contains("flower"));
+    }
+
+    @Given("user search for Tesla")
+    public void user_search_for_tesla() {
+        googlePage.googleSearchBox.sendKeys("Tesla" + Keys.ENTER);
+    }
+
+    @Then("verify the result has Tesla")
+    public void verify_the_result_has_tesla() {
+        String title = Driver.getDriver().getTitle();
+        Assert.assertTrue(title.contains("Tesla"));
+    }
+
+    @Given("user search for {string}")
+    public void user_search_for(String string) {
+        googlePage.googleSearchBox.sendKeys(string + Keys.ENTER);
+    }
+
+    @Then("verify the result has {string}")
+    public void verify_the_result_has(String string) {
+        String title = Driver.getDriver().getTitle();
+        Assert.assertTrue(title.contains(string));
+    }
+
 
 
 }
