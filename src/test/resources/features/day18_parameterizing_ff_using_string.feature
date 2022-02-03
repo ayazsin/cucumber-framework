@@ -22,11 +22,11 @@ Feature: Google_Search_Functionality
     Then verify the result has "flower"
     Then close the application
 
-    @smoke
+
   Scenario: TC04_Tesla search
     Given user in on the google page
     And user search for "Tesla"
-    Then verify the result has "Nissan"
+    Then verify the result has "Tesla"
     Then close the application
 
   Scenario: TC05_BMW search
