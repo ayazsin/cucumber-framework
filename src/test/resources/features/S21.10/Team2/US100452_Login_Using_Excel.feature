@@ -6,6 +6,7 @@ Feature: FE1010_login_feature
     Then take the screenshot
     Then close the application
 
+
   @excel_manager
   Scenario: manager_login
     Given user log in the application using excel manager
