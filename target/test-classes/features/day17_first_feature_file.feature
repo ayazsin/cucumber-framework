@@ -14,7 +14,7 @@ Feature: Google_Search_Functionality
     Then verify the result has iPhone
     Then close the application
 
-  @teapot @smoke @regression
+  @teapot @regression
   Scenario: TC02_teapot search
     And user search for tea pot
     Then verify the result has tea pot
@@ -31,7 +31,7 @@ Feature: Google_Search_Functionality
     Then verify the result has flower
     Then close the application
 
-  @smoke @tesla
+  @tesla
   Scenario: TC04_Tesla search
     And user search for Tesla
     Then verify the result has Tesla

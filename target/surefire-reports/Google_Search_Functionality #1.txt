@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: Google_Search_Functionality #1
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 27.44 s <<< FAILURE! - in Google_Search_Functionality #1
+TC01_iPhone search(Google_Search_Functionality #1)  Time elapsed: 27.44 s  <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=97.0.4692.99)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'macbook-pro.home', ip: '2a01:cb19:8bf4:600:10b6:8838:f43d:f6ae%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b271797425d3d320af3c9aaff0ad713d, clickElement {id=db7c57dc-a4f8-4799-aa5f-fb472c11f178}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: /var/folders/lf/vjhp09xj2bg...}, goog:chromeOptions: {debuggerAddress: localhost:51614}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51614/devtoo..., se:cdpVersion: 97.0.4692.99, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (b271797425d3d320af3c9aaff0ad713d)] -> xpath: (//div[@class='QS5gu sy4vM'])[2]]
+Session ID: b271797425d3d320af3c9aaff0ad713d
+

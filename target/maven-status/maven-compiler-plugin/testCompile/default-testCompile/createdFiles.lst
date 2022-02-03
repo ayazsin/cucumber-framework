@@ -1,8 +1,8 @@
 pages/DataTablesPage.class
 pages/RoomReservationPage.class
 runners/RegressionTestRunner.class
+stepdefinitions/database_step_definitions/Read_Step_Definitions.class
 runners/TestRunner.class
-stepdefinitions/database_step_defs/Read_Step_Definitions.class
 stepdefinitions/Reusable_Step_Definitions.class
 pages/DefaultPage.class
 stepdefinitions/homework/StaleException.class

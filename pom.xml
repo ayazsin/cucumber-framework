@@ -101,18 +101,18 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M1</version>
                 <configuration>
-                    <parallel>methods</parallel>
-                    <forkMode>perthread</forkMode>
-                    <threadCount>2</threadCount>
-                    <reuseForks>false</reuseForks>
-                    <argLine>-Duser.language=en</argLine>
-                    <argLine>-Xmx1024m</argLine>
-                    <argLine>-XX:MaxPermSize=256m</argLine>
-                    <argLine>-Dfile.encoding=UTF-8</argLine>
-                    <useFile>false</useFile>
-<!--                    <includes>-->
-<!--                        <include>**/runners/*TestRunner*.java</include>-->
-<!--                    </includes>-->
+<!--                    <parallel>methods</parallel>-->
+<!--                    <forkMode>perthread</forkMode>-->
+<!--                    <threadCount>2</threadCount>-->
+<!--                    <reuseForks>false</reuseForks>-->
+<!--                    <argLine>-Duser.language=en</argLine>-->
+<!--                    <argLine>-Xmx1024m</argLine>-->
+<!--                    <argLine>-XX:MaxPermSize=256m</argLine>-->
+<!--                    <argLine>-Dfile.encoding=UTF-8</argLine>-->
+<!--                    <useFile>false</useFile>-->
+                    <includes>
+                        <include>**/runners/*SmokeTestRunner*.java</include>
+                    </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>

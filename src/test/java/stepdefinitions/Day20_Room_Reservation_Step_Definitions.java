@@ -36,7 +36,6 @@ public class Day20_Room_Reservation_Step_Definitions {
         for ( List<String> eachData : roomDataMap) {
 
             if (eachData.get(0).equals("idUser")) {
-                continue;
             } else {
                 Select selectIdUser = new Select(roomReservationPage.idUser);
                 selectIdUser.selectByVisibleText(eachData.get(0));

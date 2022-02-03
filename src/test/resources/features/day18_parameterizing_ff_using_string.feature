@@ -9,6 +9,7 @@ Feature: Google_Search_Functionality
     Then verify the result has "iPhone"
     Then close the application
 
+    @smoke
   Scenario: TC02_teapot search
     Given user in on the google page
     And user search for "tea pot"

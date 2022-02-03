@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 28, 2022 07:02:16 PM</span></a>
+<a href="#"><span class="badge badge-primary">Feb 3, 2022 04:01:38 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,11 +57,6 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -71,25 +66,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 28, 2022 07:02:16 PM</h3>
+<h3>Feb 3, 2022 04:01:38 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 28, 2022 07:02:41 PM</h3>
+<h3>Feb 3, 2022 04:02:07 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -105,12 +100,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>2</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>8</b> steps passed</small></div>
 <div>
-<small data-tooltip='33%'><b>2</b> steps failed,
-<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"verify_application_title":22.324
+"Google_Search_Functionality":27.105
 };
 </script>
 <div class="row">
@@ -177,28 +172,44 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@selenium_grid</td>
-<td>0</td>
+<td>@smoke</td>
 <td>2</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
-<td>@grid_firefox</td>
-<td>0</td>
+<td>@regression</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
-<td>@grid_chrome</td>
+<td>@google_search</td>
+<td>2</td>
 <td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@parameterized_google_search</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@parallel</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -223,21 +234,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 2,
+passChild: 2,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 2,
-failGrandChild: 2,
+passGrandChild: 8,
+failGrandChild: 0,
 warningGrandChild: 0,
-skipGrandChild: 2,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -251,7 +262,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -259,31 +270,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@selenium_grid</a><a class="dropdown-item" href="#">@grid_firefox</a><a class="dropdown-item" href="#">@grid_chrome</a>
+<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@google_search</a><a class="dropdown-item" href="#">@parameterized_google_search</a><a class="dropdown-item" href="#">@parallel</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">verify_application_title</p>
+            <p class="name">Google_Search_Functionality</p>
             <p class="text-sm">
-              <span>7:02:19 PM</span> / <span>00:00:22:324</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>4:01:40 PM</span> / <span>00:00:27:105</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">verify_application_title</h5>
-<span class='badge badge-success'>01.28.2022 7:02:19 PM</span>
-<span class='badge badge-danger'>01.28.2022 7:02:41 PM</span>
-<span class='badge badge-default'>00:00:22:324</span>
+<h5 class="test-status text-pass">Google_Search_Functionality</h5>
+<span class='badge badge-success'>02.03.2022 4:01:40 PM</span>
+<span class='badge badge-danger'>02.03.2022 4:02:07 PM</span>
+<span class='badge badge-default'>00:00:27:105</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -295,131 +306,28 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>verify_title_on_chrome</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_iPhone search</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
-              <div class="step fail-bg" title="stepdefinitions.selenium_grid_step_defs.Selenium_grid_def.user_is_on_the_application_login_page_with_chrome()">
-                <span>Given user is on the application_login page with chrome</span>
+              <div class="step pass-bg" title="stepdefinitions.Day17_GoogleSearchStepDefinitions.user_in_on_the_google_page()">
+                <span>Given user in on the google page</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'macbook-pro.home', ip: '2a01:cb19:8bf4:600:3191:127:b1c5:5818%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
-Capabilities {}
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
-	at stepdefinitions.selenium_grid_step_defs.Selenium_grid_def.user_is_on_the_application_login_page_with_chrome(Selenium_grid_def.java:43)
-	at ✽.user is on the application_login page with chrome(file:///Users/ayse/eclipse-workspace/cucumber-framework/./src/test/resources/features/selenium_grid_features/selenium_grid.feature:5)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: connection timed out: /192.168.1.18:4444
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:119)
-	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
-	at stepdefinitions.selenium_grid_step_defs.Selenium_grid_def.user_is_on_the_application_login_page_with_chrome(Selenium_grid_def.java:43)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-Caused by: java.net.ConnectException: connection timed out: /192.168.1.18:4444
-	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
-	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
-	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
-	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
-	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:571)
-	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:550)
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
-	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
-	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
-	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:262)
-	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
-	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.1.18:4444
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
-	... 9 more
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="stepdefinitions.selenium_grid_step_defs.Selenium_grid_def.verify_the_title_includes_resortsline()">
-                <span>Then verify the title includes Resortsline</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="stepdefinitions.Day17_GoogleSearchStepDefinitions.user_search_for_i_phone()">
+                <span>And user search for iPhone</span>
+      <div>
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>Screenshot
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
+              <div class="step pass-bg" title="stepdefinitions.Day17_GoogleSearchStepDefinitions.verify_the_result_has_i_phone()">
+                <span>Then verify the result has iPhone</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Reusable_Step_Definitions.close_the_application()">
+                <span>Then close the application</span>
       <div>
       </div>
               </div>
@@ -429,168 +337,28 @@ Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="7"><span class="badge log fail-bg mr-2">Fail</span>verify_title_on_firefox</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>TC02_teapot search</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
-              <div class="step fail-bg" title="stepdefinitions.selenium_grid_step_defs.Selenium_grid_def.user_is_on_the_application_login_page_with_firefox()">
-                <span>Given user is on the application_login page with firefox</span>
+              <div class="step pass-bg" title="stepdefinitions.Day17_GoogleSearchStepDefinitions.user_in_on_the_google_page()">
+                <span>Given user in on the google page</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'macbook-pro.home', ip: '2a01:cb19:8bf4:600:3191:127:b1c5:5818%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-Capabilities {}
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
-	at stepdefinitions.selenium_grid_step_defs.Selenium_grid_def.user_is_on_the_application_login_page_with_firefox(Selenium_grid_def.java:72)
-	at ✽.user is on the application_login page with firefox(file:///Users/ayse/eclipse-workspace/cucumber-framework/./src/test/resources/features/selenium_grid_features/selenium_grid.feature:10)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Host is down: /192.168.1.18:4444
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:80)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:51)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:119)
-	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:55)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:39)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:246)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:146)
-	at stepdefinitions.selenium_grid_step_defs.Selenium_grid_def.user_is_on_the_application_login_page_with_firefox(Selenium_grid_def.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-Caused by: java.net.ConnectException: Host is down: /192.168.1.18:4444
-	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
-	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
-	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
-	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
-	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:578)
-	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:552)
-	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:491)
-	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:616)
-	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:609)
-	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:117)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:284)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1342)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:548)
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:533)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495)
-	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51)
-	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:548)
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:533)
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:517)
-	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:978)
-	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:265)
-	at io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:250)
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedSocketException: Host is down: /192.168.1.18:4444
-Caused by: java.net.SocketException: Host is down
-	at sun.nio.ch.Net.connect0(Native Method)
-	at sun.nio.ch.Net.connect(Net.java:459)
-	at sun.nio.ch.Net.connect(Net.java:451)
-	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:646)
-	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:91)
-	at io.netty.util.internal.SocketUtils$3.run(SocketUtils.java:88)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at io.netty.util.internal.SocketUtils.connect(SocketUtils.java:88)
-	at io.netty.channel.socket.nio.NioSocketChannel.doConnect(NioSocketChannel.java:315)
-	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.connect(AbstractNioChannel.java:248)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.connect(DefaultChannelPipeline.java:1342)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:548)
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:533)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.connect(CombinedChannelDuplexHandler.java:495)
-	at io.netty.channel.ChannelOutboundHandlerAdapter.connect(ChannelOutboundHandlerAdapter.java:51)
-	at io.netty.channel.CombinedChannelDuplexHandler.connect(CombinedChannelDuplexHandler.java:296)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeConnect(AbstractChannelHandlerContext.java:548)
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:533)
-	at io.netty.channel.AbstractChannelHandlerContext.connect(AbstractChannelHandlerContext.java:517)
-	at io.netty.channel.DefaultChannelPipeline.connect(DefaultChannelPipeline.java:978)
-	at io.netty.channel.AbstractChannel.connect(AbstractChannel.java:265)
-	at io.netty.bootstrap.Bootstrap$3.run(Bootstrap.java:250)
-	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
-	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:469)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Thread.java:748)
-</textarea>
-      
       </div>
               </div>
-              <div class="step skip-bg" title="stepdefinitions.selenium_grid_step_defs.Selenium_grid_def.verify_the_title_includes_resortsline()">
-                <span>Then verify the title includes Resortsline</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="stepdefinitions.Day17_GoogleSearchStepDefinitions.user_search_for(java.lang.String)">
+                <span>And user search for "tea pot"</span>
+      <div>
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>Screenshot
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded2.png' src="../embedded2.png">
-    
-    </div></div>
-</div>
+              <div class="step pass-bg" title="stepdefinitions.Day17_GoogleSearchStepDefinitions.verify_the_result_has(java.lang.String)">
+                <span>Then verify the result has "tea pot"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Reusable_Step_Definitions.close_the_application()">
+                <span>Then close the application</span>
       <div>
       </div>
               </div>
@@ -613,22 +381,22 @@ Caused by: java.net.SocketException: Host is down
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@selenium_grid</p>
+<p class="name">@smoke</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@selenium_grid</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -639,23 +407,23 @@ Caused by: java.net.SocketException: Host is down
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:02:19 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:40 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>verify_title_on_chrome</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01_iPhone search</a>
 <div class="">
-<span class="badge badge-default">verify_application_title.verify_title_on_chrome</span>
+<span class="badge badge-default">Google_Search_Functionality.TC01_iPhone search</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:02:37 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:56 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='7'>verify_title_on_firefox</a>
+<a href="#" class="linked" test-id='1' id='9'>TC02_teapot search</a>
 <div class="">
-<span class="badge badge-default">verify_application_title.verify_title_on_firefox</span>
+<span class="badge badge-default">Google_Search_Functionality.TC02_teapot search</span>
 </div>
 </td>
 </tr>
@@ -666,15 +434,15 @@ Caused by: java.net.SocketException: Host is down
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@grid_firefox</p>
+<p class="name">@regression</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@grid_firefox</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -685,13 +453,13 @@ Caused by: java.net.SocketException: Host is down
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:02:37 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:40 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='7'>verify_title_on_firefox</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01_iPhone search</a>
 <div class="">
-<span class="badge badge-default">verify_application_title.verify_title_on_firefox</span>
+<span class="badge badge-default">Google_Search_Functionality.TC01_iPhone search</span>
 </div>
 </td>
 </tr>
@@ -702,67 +470,15 @@ Caused by: java.net.SocketException: Host is down
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@grid_chrome</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@grid_chrome</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:02:19 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>verify_title_on_chrome</a>
-<div class="">
-<span class="badge badge-default">verify_application_title.verify_title_on_chrome</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>2</span>
-</span>
-<p class="name">org.openqa.selenium.SessionNotCreatedException</p>
+<p class="name">@google_search</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.SessionNotCreatedException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>@google_search</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -773,23 +489,105 @@ Caused by: java.net.SocketException: Host is down
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:02:19 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:40 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='4'>Given user is on the application_login page with chrome</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01_iPhone search</a>
 <div class="">
-<span class="badge badge-default">verify_application_title.verify_title_on_chrome.Given user is on the application_login page with chrome</span>
+<span class="badge badge-default">Google_Search_Functionality.TC01_iPhone search</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:02:37 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:56 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>Given user is on the application_login page with firefox</a>
+<a href="#" class="linked" test-id='1' id='9'>TC02_teapot search</a>
 <div class="">
-<span class="badge badge-default">verify_application_title.verify_title_on_firefox.Given user is on the application_login page with firefox</span>
+<span class="badge badge-default">Google_Search_Functionality.TC02_teapot search</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@parameterized_google_search</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@parameterized_google_search</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>TC02_teapot search</a>
+<div class="">
+<span class="badge badge-default">Google_Search_Functionality.TC02_teapot search</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@parallel</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@parallel</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:40 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC01_iPhone search</a>
+<div class="">
+<span class="badge badge-default">Google_Search_Functionality.TC01_iPhone search</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:01:56 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>TC02_teapot search</a>
+<div class="">
+<span class="badge badge-default">Google_Search_Functionality.TC02_teapot search</span>
 </div>
 </td>
 </tr>

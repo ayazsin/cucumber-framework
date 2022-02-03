@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Google_Search_Functionality #2
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.521 s - in Google_Search_Functionality #2
