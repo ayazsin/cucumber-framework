@@ -110,9 +110,11 @@
 <!--                    <argLine>-XX:MaxPermSize=256m</argLine>-->
 <!--                    <argLine>-Dfile.encoding=UTF-8</argLine>-->
 <!--                    <useFile>false</useFile>-->
-<!--                    <includes>-->
-<!--                        <include>**/runners/*SmokeTestRunner*.java</include>-->
-<!--                    </includes>-->
+                    <includes>
+                        <include>**/runners/*SmokeTestRunner*.java</include>
+                        <include>**/runners/*RegressionTestRunner*.java</include>
+
+                    </includes>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
